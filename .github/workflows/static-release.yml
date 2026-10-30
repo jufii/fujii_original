@@ -1,0 +1,53 @@
+name: Verified static release
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 22 * * *' # 07:00 JST; delay is possible
+permissions:
+  contents: read
+concurrency:
+  group: touchline-production
+  cancel-in-progress: false
+jobs:
+  release:
+    if: vars.TOUCHLINE_DEPLOY_ENABLED == 'true'
+    environment: production
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TOUCHLINE_DATABASE_URL: ${{ secrets.TOUCHLINE_DATABASE_URL }}
+      SITE_URL: ${{ vars.SITE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r requirements.txt
+      - name: Require persistent DB and public origin
+        run: |
+          python -c "import os; assert os.environ['TOUCHLINE_DATABASE_URL'].startswith('postgresql+psycopg://'); assert os.environ['SITE_URL'].startswith('https://')"
+      - run: python -m unittest discover -s tests -v
+      - working-directory: frontend
+        run: npm install && npm run build
+      - run: python -m app.workflow export --dist frontend/dist
+      - name: Deploy only the completed public bundle
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy frontend/dist --project-name=${{ vars.CLOUDFLARE_PAGES_PROJECT }} --branch=main
+      - name: Confirm production manifest and article URLs
+        run: python -m app.release confirm --dist frontend/dist
+      - name: Retain failure diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: static-release-failure-${{ github.run_id }}
+          path: frontend/dist/release.json
+          retention-days: 7
+      - name: Failure summary
+        if: failure()
+        run: echo '::error::Release failed. Check Actions logs and production URL; no article is marked live until confirmation.'

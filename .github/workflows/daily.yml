@@ -1,0 +1,18 @@
+# Alternative to the always-on Docker scheduler. Do not enable both in production.
+name: Daily football pipeline
+on:
+  workflow_dispatch:
+jobs:
+  daily:
+    if: vars.TOUCHLINE_COLLECTION_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Run pipeline
+        env:
+          TOUCHLINE_DATABASE_URL: ${{ secrets.TOUCHLINE_DATABASE_URL }}
+        run: python -m app.workflow collect

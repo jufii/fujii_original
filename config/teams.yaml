@@ -1,0 +1,677 @@
+{
+  "season": "2026-27",
+  "checked_at": "2026-10-29",
+  "coverage_status": "96-club-catalog-official-lists; aliases conservative; source coverage not guaranteed",
+  "leagues": [
+    {
+      "slug": "premier-league",
+      "name_ja": "プレミアリーグ",
+      "roster_reference": "https://www.premierleague.com/en/news/4365156/new-to-the-premier-league-heres-all-you-need-to-know",
+      "teams": [
+        {
+          "slug": "bournemouth",
+          "name": "Bournemouth",
+          "name_ja": "ボーンマス",
+          "aliases": [
+            "AFC Bournemouth"
+          ]
+        },
+        {
+          "slug": "arsenal",
+          "name": "Arsenal",
+          "name_ja": "アーセナル",
+          "aliases": []
+        },
+        {
+          "slug": "aston-villa",
+          "name": "Aston Villa",
+          "name_ja": "アストン・ヴィラ",
+          "aliases": []
+        },
+        {
+          "slug": "brentford",
+          "name": "Brentford",
+          "name_ja": "ブレントフォード",
+          "aliases": []
+        },
+        {
+          "slug": "brighton",
+          "name": "Brighton",
+          "name_ja": "ブライトン",
+          "aliases": [
+            "Brighton & Hove Albion"
+          ]
+        },
+        {
+          "slug": "chelsea",
+          "name": "Chelsea",
+          "name_ja": "チェルシー",
+          "aliases": []
+        },
+        {
+          "slug": "coventry-city",
+          "name": "Coventry City",
+          "name_ja": "コヴェントリー",
+          "aliases": []
+        },
+        {
+          "slug": "crystal-palace",
+          "name": "Crystal Palace",
+          "name_ja": "クリスタル・パレス",
+          "aliases": []
+        },
+        {
+          "slug": "everton",
+          "name": "Everton",
+          "name_ja": "エヴァートン",
+          "aliases": []
+        },
+        {
+          "slug": "fulham",
+          "name": "Fulham",
+          "name_ja": "フラム",
+          "aliases": []
+        },
+        {
+          "slug": "hull-city",
+          "name": "Hull City",
+          "name_ja": "ハル・シティ",
+          "aliases": []
+        },
+        {
+          "slug": "ipswich-town",
+          "name": "Ipswich Town",
+          "name_ja": "イプスウィッチ",
+          "aliases": []
+        },
+        {
+          "slug": "leeds-united",
+          "name": "Leeds United",
+          "name_ja": "リーズ",
+          "aliases": []
+        },
+        {
+          "slug": "liverpool",
+          "name": "Liverpool",
+          "name_ja": "リヴァプール",
+          "aliases": []
+        },
+        {
+          "slug": "man-city",
+          "name": "Manchester City",
+          "name_ja": "マンチェスター・シティ",
+          "aliases": [
+            "Man City"
+          ]
+        },
+        {
+          "slug": "manchester-united",
+          "name": "Manchester United",
+          "name_ja": "マンチェスター・ユナイテッド",
+          "aliases": [
+            "Man Utd",
+            "Man United"
+          ]
+        },
+        {
+          "slug": "newcastle-united",
+          "name": "Newcastle United",
+          "name_ja": "ニューカッスル",
+          "aliases": [
+            "Newcastle"
+          ]
+        },
+        {
+          "slug": "nottingham-forest",
+          "name": "Nottingham Forest",
+          "name_ja": "ノッティンガム・フォレスト",
+          "aliases": []
+        },
+        {
+          "slug": "sunderland",
+          "name": "Sunderland",
+          "name_ja": "サンダーランド",
+          "aliases": []
+        },
+        {
+          "slug": "tottenham-hotspur",
+          "name": "Tottenham Hotspur",
+          "name_ja": "トッテナム",
+          "aliases": [
+            "Tottenham",
+            "Spurs"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "la-liga",
+      "name_ja": "ラ・リーガ",
+      "roster_reference": "https://www.laliga.com/en-MA/laliga-easports/clubs",
+      "teams": [
+        {
+          "slug": "athletic-club",
+          "name": "Athletic Club",
+          "name_ja": "アスレティック・クラブ",
+          "aliases": [
+            "Athletic Bilbao"
+          ]
+        },
+        {
+          "slug": "atletico",
+          "name": "Atlético de Madrid",
+          "name_ja": "アトレティコ",
+          "aliases": [
+            "Atletico Madrid",
+            "Atlético Madrid"
+          ]
+        },
+        {
+          "slug": "osasuna",
+          "name": "Osasuna",
+          "name_ja": "オサスナ",
+          "aliases": []
+        },
+        {
+          "slug": "celta",
+          "name": "Celta",
+          "name_ja": "セルタ",
+          "aliases": []
+        },
+        {
+          "slug": "deportivo-alaves",
+          "name": "Deportivo Alavés",
+          "name_ja": "アラベス",
+          "aliases": []
+        },
+        {
+          "slug": "elche",
+          "name": "Elche",
+          "name_ja": "エルチェ",
+          "aliases": []
+        },
+        {
+          "slug": "barcelona",
+          "name": "FC Barcelona",
+          "name_ja": "FCバルセロナ",
+          "aliases": [
+            "Barcelona",
+            "Barça",
+            "Barca"
+          ]
+        },
+        {
+          "slug": "getafe",
+          "name": "Getafe",
+          "name_ja": "ヘタフェ",
+          "aliases": []
+        },
+        {
+          "slug": "levante",
+          "name": "Levante",
+          "name_ja": "レバンテ",
+          "aliases": []
+        },
+        {
+          "slug": "malaga",
+          "name": "Málaga",
+          "name_ja": "マラガ",
+          "aliases": [
+            "Malaga"
+          ]
+        },
+        {
+          "slug": "racing-santander",
+          "name": "Racing Santander",
+          "name_ja": "ラシン・サンタンデール",
+          "aliases": [
+            "R. Racing Club"
+          ]
+        },
+        {
+          "slug": "rayo-vallecano",
+          "name": "Rayo Vallecano",
+          "name_ja": "ラージョ",
+          "aliases": []
+        },
+        {
+          "slug": "deportivo-la-coruna",
+          "name": "Deportivo La Coruña",
+          "name_ja": "デポルティーボ",
+          "aliases": [
+            "RC Deportivo",
+            "Deportivo La Coruna"
+          ]
+        },
+        {
+          "slug": "espanyol",
+          "name": "Espanyol",
+          "name_ja": "エスパニョール",
+          "aliases": []
+        },
+        {
+          "slug": "real-betis",
+          "name": "Real Betis",
+          "name_ja": "ベティス",
+          "aliases": []
+        },
+        {
+          "slug": "real-madrid",
+          "name": "Real Madrid",
+          "name_ja": "レアル・マドリード",
+          "aliases": []
+        },
+        {
+          "slug": "real-sociedad",
+          "name": "Real Sociedad",
+          "name_ja": "レアル・ソシエダ",
+          "aliases": []
+        },
+        {
+          "slug": "sevilla",
+          "name": "Sevilla",
+          "name_ja": "セビージャ",
+          "aliases": []
+        },
+        {
+          "slug": "valencia",
+          "name": "Valencia",
+          "name_ja": "バレンシア",
+          "aliases": []
+        },
+        {
+          "slug": "villarreal",
+          "name": "Villarreal",
+          "name_ja": "ビジャレアル",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "slug": "serie-a",
+      "name_ja": "セリエA",
+      "roster_reference": "https://www.legaseriea.it/team",
+      "teams": [
+        {
+          "slug": "atalanta",
+          "name": "Atalanta",
+          "name_ja": "アタランタ",
+          "aliases": []
+        },
+        {
+          "slug": "bologna",
+          "name": "Bologna",
+          "name_ja": "ボローニャ",
+          "aliases": []
+        },
+        {
+          "slug": "cagliari",
+          "name": "Cagliari",
+          "name_ja": "カリアリ",
+          "aliases": []
+        },
+        {
+          "slug": "como",
+          "name": "Como",
+          "name_ja": "コモ",
+          "aliases": []
+        },
+        {
+          "slug": "fiorentina",
+          "name": "Fiorentina",
+          "name_ja": "フィオレンティーナ",
+          "aliases": []
+        },
+        {
+          "slug": "frosinone",
+          "name": "Frosinone",
+          "name_ja": "フロジノーネ",
+          "aliases": []
+        },
+        {
+          "slug": "genoa",
+          "name": "Genoa",
+          "name_ja": "ジェノア",
+          "aliases": []
+        },
+        {
+          "slug": "inter",
+          "name": "Internazionale",
+          "name_ja": "インテル",
+          "aliases": [
+            "Inter Milan"
+          ]
+        },
+        {
+          "slug": "juventus",
+          "name": "Juventus",
+          "name_ja": "ユヴェントス",
+          "aliases": []
+        },
+        {
+          "slug": "lazio",
+          "name": "Lazio",
+          "name_ja": "ラツィオ",
+          "aliases": []
+        },
+        {
+          "slug": "lecce",
+          "name": "Lecce",
+          "name_ja": "レッチェ",
+          "aliases": []
+        },
+        {
+          "slug": "ac-milan",
+          "name": "AC Milan",
+          "name_ja": "ACミラン",
+          "aliases": [
+            "Milan"
+          ]
+        },
+        {
+          "slug": "monza",
+          "name": "Monza",
+          "name_ja": "モンツァ",
+          "aliases": []
+        },
+        {
+          "slug": "napoli",
+          "name": "Napoli",
+          "name_ja": "ナポリ",
+          "aliases": []
+        },
+        {
+          "slug": "parma",
+          "name": "Parma",
+          "name_ja": "パルマ",
+          "aliases": []
+        },
+        {
+          "slug": "roma",
+          "name": "Roma",
+          "name_ja": "ローマ",
+          "aliases": []
+        },
+        {
+          "slug": "sassuolo",
+          "name": "Sassuolo",
+          "name_ja": "サッスオーロ",
+          "aliases": []
+        },
+        {
+          "slug": "torino",
+          "name": "Torino",
+          "name_ja": "トリノ",
+          "aliases": []
+        },
+        {
+          "slug": "udinese",
+          "name": "Udinese",
+          "name_ja": "ウディネーゼ",
+          "aliases": []
+        },
+        {
+          "slug": "venezia",
+          "name": "Venezia",
+          "name_ja": "ヴェネツィア",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "slug": "bundesliga",
+      "name_ja": "ブンデスリーガ",
+      "roster_reference": "https://www.bundesliga.com/en/bundesliga/clubs",
+      "teams": [
+        {
+          "slug": "bayern",
+          "name": "Bayern Munich",
+          "name_ja": "バイエルン",
+          "aliases": [
+            "Bayern",
+            "Bayern München"
+          ]
+        },
+        {
+          "slug": "dortmund",
+          "name": "Borussia Dortmund",
+          "name_ja": "ドルトムント",
+          "aliases": [
+            "Dortmund",
+            "BVB"
+          ]
+        },
+        {
+          "slug": "rb-leipzig",
+          "name": "RB Leipzig",
+          "name_ja": "ライプツィヒ",
+          "aliases": []
+        },
+        {
+          "slug": "vfb-stuttgart",
+          "name": "VfB Stuttgart",
+          "name_ja": "シュトゥットガルト",
+          "aliases": []
+        },
+        {
+          "slug": "hoffenheim",
+          "name": "Hoffenheim",
+          "name_ja": "ホッフェンハイム",
+          "aliases": []
+        },
+        {
+          "slug": "bayer-leverkusen",
+          "name": "Bayer Leverkusen",
+          "name_ja": "レヴァークーゼン",
+          "aliases": []
+        },
+        {
+          "slug": "freiburg",
+          "name": "Freiburg",
+          "name_ja": "フライブルク",
+          "aliases": []
+        },
+        {
+          "slug": "eintracht-frankfurt",
+          "name": "Eintracht Frankfurt",
+          "name_ja": "フランクフルト",
+          "aliases": []
+        },
+        {
+          "slug": "augsburg",
+          "name": "Augsburg",
+          "name_ja": "アウクスブルク",
+          "aliases": []
+        },
+        {
+          "slug": "mainz",
+          "name": "Mainz",
+          "name_ja": "マインツ",
+          "aliases": []
+        },
+        {
+          "slug": "union-berlin",
+          "name": "Union Berlin",
+          "name_ja": "ウニオン・ベルリン",
+          "aliases": []
+        },
+        {
+          "slug": "borussia-monchengladbach",
+          "name": "Borussia Mönchengladbach",
+          "name_ja": "ボルシアMG",
+          "aliases": [
+            "Borussia Monchengladbach",
+            "Gladbach"
+          ]
+        },
+        {
+          "slug": "hamburg",
+          "name": "Hamburg",
+          "name_ja": "ハンブルク",
+          "aliases": [
+            "Hamburger SV"
+          ]
+        },
+        {
+          "slug": "cologne",
+          "name": "Cologne",
+          "name_ja": "ケルン",
+          "aliases": [
+            "Köln",
+            "Koln"
+          ]
+        },
+        {
+          "slug": "werder-bremen",
+          "name": "Werder Bremen",
+          "name_ja": "ブレーメン",
+          "aliases": []
+        },
+        {
+          "slug": "schalke",
+          "name": "Schalke",
+          "name_ja": "シャルケ",
+          "aliases": []
+        },
+        {
+          "slug": "elversberg",
+          "name": "Elversberg",
+          "name_ja": "エルフェアスベルク",
+          "aliases": []
+        },
+        {
+          "slug": "paderborn",
+          "name": "Paderborn",
+          "name_ja": "パーダーボルン",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "slug": "ligue-1",
+      "name_ja": "リーグ・アン",
+      "roster_reference": "https://ligue1.com/fr/articles/l1_article_5293-les-dates-de-reprise-des-clubs-de-l1-2627",
+      "teams": [
+        {
+          "slug": "angers",
+          "name": "Angers",
+          "name_ja": "アンジェ",
+          "aliases": []
+        },
+        {
+          "slug": "auxerre",
+          "name": "Auxerre",
+          "name_ja": "オセール",
+          "aliases": []
+        },
+        {
+          "slug": "brest",
+          "name": "Brest",
+          "name_ja": "ブレスト",
+          "aliases": []
+        },
+        {
+          "slug": "le-havre",
+          "name": "Le Havre",
+          "name_ja": "ル・アーヴル",
+          "aliases": []
+        },
+        {
+          "slug": "le-mans",
+          "name": "Le Mans",
+          "name_ja": "ル・マン",
+          "aliases": []
+        },
+        {
+          "slug": "lens",
+          "name": "Lens",
+          "name_ja": "ランス",
+          "aliases": []
+        },
+        {
+          "slug": "lorient",
+          "name": "Lorient",
+          "name_ja": "ロリアン",
+          "aliases": []
+        },
+        {
+          "slug": "lille",
+          "name": "Lille",
+          "name_ja": "リール",
+          "aliases": [
+            "LOSC"
+          ]
+        },
+        {
+          "slug": "lyon",
+          "name": "Lyon",
+          "name_ja": "リヨン",
+          "aliases": [
+            "Olympique Lyonnais"
+          ]
+        },
+        {
+          "slug": "marseille",
+          "name": "Marseille",
+          "name_ja": "マルセイユ",
+          "aliases": [
+            "Olympique de Marseille"
+          ]
+        },
+        {
+          "slug": "monaco",
+          "name": "Monaco",
+          "name_ja": "モナコ",
+          "aliases": []
+        },
+        {
+          "slug": "nice",
+          "name": "Nice",
+          "name_ja": "ニース",
+          "aliases": []
+        },
+        {
+          "slug": "paris-fc",
+          "name": "Paris FC",
+          "name_ja": "パリFC",
+          "aliases": []
+        },
+        {
+          "slug": "psg",
+          "name": "Paris Saint-Germain",
+          "name_ja": "パリ・サンジェルマン",
+          "aliases": [
+            "PSG",
+            "Paris Saint Germain"
+          ]
+        },
+        {
+          "slug": "rennes",
+          "name": "Rennes",
+          "name_ja": "レンヌ",
+          "aliases": []
+        },
+        {
+          "slug": "strasbourg",
+          "name": "Strasbourg",
+          "name_ja": "ストラスブール",
+          "aliases": []
+        },
+        {
+          "slug": "toulouse",
+          "name": "Toulouse",
+          "name_ja": "トゥールーズ",
+          "aliases": []
+        },
+        {
+          "slug": "troyes",
+          "name": "Troyes",
+          "name_ja": "トロワ",
+          "aliases": [
+            "ESTAC"
+          ]
+        }
+      ]
+    }
+  ]
+}

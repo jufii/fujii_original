@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.production.example
+__pycache__/
+*.pyc
+node_modules/
+frontend/dist/
+data/
+*.db
+
+.venv/
+site-dist/
+*.backup
+
+!.env.example
+!.env.local.example

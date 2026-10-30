@@ -1,0 +1,52 @@
+{
+  "sources": [
+    {
+      "name": "BBC Sport Football",
+      "rss_url": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "base_url": "https://www.bbc.co.uk",
+      "language": "en",
+      "active": true,
+      "access_mode": "rss_metadata",
+      "commercial_reuse_status": "unknown",
+      "license_reference": null,
+      "reviewed_by": null,
+      "checked_at": null
+    },
+    {
+      "name": "The Guardian Football",
+      "rss_url": "https://www.theguardian.com/football/rss",
+      "base_url": "https://www.theguardian.com",
+      "language": "en",
+      "active": true,
+      "access_mode": "rss_metadata",
+      "commercial_reuse_status": "unknown",
+      "license_reference": null,
+      "reviewed_by": null,
+      "checked_at": null
+    },
+    {
+      "name": "FC Barcelona Noticias",
+      "rss_url": "https://www.fcbarcelonanoticias.com/rss/",
+      "base_url": "https://www.fcbarcelonanoticias.com",
+      "language": "es",
+      "active": false,
+      "access_mode": "rss_metadata",
+      "commercial_reuse_status": "unknown",
+      "license_reference": null,
+      "reviewed_by": null,
+      "checked_at": null
+    },
+    {
+      "name": "ESPN Soccer",
+      "rss_url": "https://www.espn.com/espn/rss/soccer/news",
+      "base_url": "https://www.espn.com",
+      "language": "en",
+      "active": false,
+      "access_mode": "rss_metadata",
+      "commercial_reuse_status": "unknown",
+      "license_reference": null,
+      "reviewed_by": null,
+      "checked_at": null
+    }
+  ]
+}

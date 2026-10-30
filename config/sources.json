@@ -1,0 +1,6 @@
+[
+ {"name":"BBC Sport Football","feed":"https://feeds.bbci.co.uk/sport/football/rss.xml","enabled":true,"access":"rss_summary","commercial_reuse":"permission_required","language":"en"},
+ {"name":"The Guardian Football","feed":"https://www.theguardian.com/football/rss","enabled":true,"access":"rss_summary","commercial_reuse":"permission_required","language":"en"},
+ {"name":"FC Barcelona Noticias","feed":"https://www.fcbarcelonanoticias.com/rss/","enabled":false,"access":"unverified","commercial_reuse":"permission_required","language":"es"},
+ {"name":"ESPN Soccer","feed":"https://www.espn.com/espn/rss/soccer/news","enabled":false,"access":"rss_summary","commercial_reuse":"permission_required","language":"en"}
+]

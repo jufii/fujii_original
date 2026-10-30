@@ -1,0 +1,230 @@
+{
+  "$defs": {
+    "Claim": {
+      "additionalProperties": false,
+      "properties": {
+        "event_id": {
+          "title": "Event Id",
+          "type": "integer"
+        },
+        "text": {
+          "minLength": 5,
+          "title": "Text",
+          "type": "string"
+        },
+        "source_url": {
+          "title": "Source Url",
+          "type": "string"
+        },
+        "evidence": {
+          "minLength": 5,
+          "title": "Evidence",
+          "type": "string"
+        },
+        "certainty": {
+          "pattern": "^(confirmed|reported|uncertain)$",
+          "title": "Certainty",
+          "type": "string"
+        }
+      },
+      "required": [
+        "event_id",
+        "text",
+        "source_url",
+        "evidence",
+        "certainty"
+      ],
+      "title": "Claim",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "article_id": {
+      "pattern": "^[a-zA-Z0-9_-]{1,100}$",
+      "title": "Article Id",
+      "type": "string"
+    },
+    "article_type": {
+      "pattern": "^(daily|individual)$",
+      "title": "Article Type",
+      "type": "string"
+    },
+    "title": {
+      "maxLength": 180,
+      "minLength": 8,
+      "title": "Title",
+      "type": "string"
+    },
+    "slug": {
+      "maxLength": 160,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "title": "Slug",
+      "type": "string"
+    },
+    "league": {
+      "title": "League",
+      "type": "string"
+    },
+    "teams": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Teams",
+      "type": "array"
+    },
+    "topic": {
+      "title": "Topic",
+      "type": "string"
+    },
+    "published_at": {
+      "format": "date-time",
+      "title": "Published At",
+      "type": "string"
+    },
+    "body": {
+      "maxLength": 20000,
+      "minLength": 150,
+      "title": "Body",
+      "type": "string"
+    },
+    "summary": {
+      "maxLength": 500,
+      "minLength": 30,
+      "title": "Summary",
+      "type": "string"
+    },
+    "source_urls": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Source Urls",
+      "type": "array"
+    },
+    "event_ids": {
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 1,
+      "title": "Event Ids",
+      "type": "array"
+    },
+    "claims": {
+      "items": {
+        "$ref": "#/$defs/Claim"
+      },
+      "minItems": 1,
+      "title": "Claims",
+      "type": "array"
+    },
+    "verification_status": {
+      "pattern": "^(pending|needs_review)$",
+      "title": "Verification Status",
+      "type": "string"
+    },
+    "publication_status": {
+      "pattern": "^(draft|needs_review)$",
+      "title": "Publication Status",
+      "type": "string"
+    },
+    "content_mode": {
+      "default": "summary",
+      "pattern": "^(summary|translation)$",
+      "title": "Content Mode",
+      "type": "string"
+    },
+    "original_title": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Original Title"
+    },
+    "original_publisher": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Original Publisher"
+    },
+    "original_author": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Original Author"
+    },
+    "original_published_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Original Published At"
+    },
+    "original_text": {
+      "anyOf": [
+        {
+          "maxLength": 100000,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Original Text"
+    },
+    "model_id": {
+      "default": "codex-session",
+      "title": "Model Id",
+      "type": "string"
+    },
+    "prompt_version": {
+      "default": "v3.1",
+      "title": "Prompt Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "article_id",
+    "article_type",
+    "title",
+    "slug",
+    "league",
+    "teams",
+    "topic",
+    "published_at",
+    "body",
+    "summary",
+    "source_urls",
+    "event_ids",
+    "claims",
+    "verification_status",
+    "publication_status"
+  ],
+  "title": "Generated",
+  "type": "object"
+}
